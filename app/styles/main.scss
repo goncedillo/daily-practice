@@ -1,0 +1,65 @@
+:root {
+  --primayColor: #7D59B3;
+  --secondaryColor: #D1B3FF;
+}
+
+body {
+  background-color: #222;
+}
+
+.input-group-text {
+  border-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+}
+
+input[type="text"].form-control {
+  border-color: var(--primayColor);
+}
+
+.buy-item {
+  min-height: 180px;
+  background: var(--primayColor);
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0.5em;
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+
+  .buy-item--icon {
+    position: absolute;
+    max-width: 20px;
+    top: 0.5em;
+    left: 0.5em;
+    color: var(--secondaryColor);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // .item-image {
+  //   border-radius: 100%;
+  //   overflow: hidden;
+  //   width: 100px;
+  //   height: 100px;
+
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //     object-fit: cover;
+  //   }
+  // }
+
+  &.go-to-remove {
+    background-color: var(--secondaryColor);
+  }
+
+  &:active {
+    background-color: var(--secondaryColor);
+  }
+}
